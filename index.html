@@ -7,10 +7,12 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <script src="main.js"></script>
-
     <div class="container">
       <div class="infoContainer">
         <header class="header">
@@ -21,7 +23,24 @@
           </div>
         </header>
 
-        <section class="slider"></section>
+        <section class="swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://picsum.photos/400/275" class="swiperImg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://picsum.photos/401/275" class="swiperImg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://picsum.photos/402/275" class="swiperImg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
 
         <section class="buttons">
           <svg
@@ -83,8 +102,7 @@
           <div class="comments">
             <p>
               <span>Lucas Credie</span> dolor sit amet, consectetur adipiscing
-              elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim
-              ut eu cras ultrices eget et tristique proin.
+              elit. Mi enim ut eu cras ultrices eget et tristique proin.
             </p>
             <p>
               <span>Comment</span> consectetur adipiscing elit. Mi enim ut eu
@@ -98,5 +116,8 @@
         </section>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

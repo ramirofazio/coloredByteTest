@@ -1,3 +1,9 @@
-console.log("hello!")
-
-console.log("width: " + window.innerWidth + " Height: " + window.innerHeight)
+const swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
