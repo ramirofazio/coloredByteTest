@@ -8,9 +8,9 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
-function like() {
-    const likeBtnPath = document.getElementById("likeBtnPath");
-    const likeBtnSvg = document.getElementById("likeBtnSvg");
+const likeBtnSvg = document.getElementsByClassName("likeBtnSvg")[0];
+likeBtnSvg.addEventListener("click", function like() {
+    const likeBtnPath = document.getElementsByClassName("likeBtnPath")[0];
     if (likeBtnPath.style.fill !== "white") {
         likeBtnPath.style.fill = "white";
         likeBtnPath.style.stroke = "black";
@@ -36,7 +36,8 @@ function like() {
 
         );
     };
-};
+})
+
 
 const postbtn = document.getElementsByClassName("postBtn");
 postbtn[0].addEventListener('click', function addComment(event) {
@@ -44,13 +45,31 @@ postbtn[0].addEventListener('click', function addComment(event) {
 
     const inputValue = document.getElementsByClassName("commentInput")[0].value;
     if (inputValue) {
-        const comments = document.getElementsByClassName("comments");
-        const newComment = document.createElement("p");
-        newComment.innerHTML = "<span>Comment</span> " + inputValue;
-        comments[0].append(newComment);
+        if (inputValue.length < 40) {
+            const comments = document.getElementsByClassName("comments");
+            const newComment = document.createElement("p");
+            newComment.innerHTML = "<span>Comment</span> " + inputValue;
+            comments[0].append(newComment);
+        } else {
+            alert("Plase write a shorter comment!")
+        }
     } else {
         alert("Please write a comment first!")
     };
     document.getElementsByClassName("commentInput")[0].value = "";
 })
 
+/*
+    Hello Stranger! My name is Ramiro.
+
+    I hope you like this code, I have some things to reinforce, but I'm in constant learning and have a lot of consistency :D.
+
+    My objective is to enter on a company to learn of my seniors collagues and stay there to progress and to develop high quality 
+    software. I really hope that you consider my profile to this position, i want to work here. 
+
+    My final objective as a Dev is to become a real Senior, help others and to develop very high software structures and create
+    innovative technologies. Thanks 4 read.
+
+    -RFD
+
+*/

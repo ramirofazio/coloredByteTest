@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "surge": "^0.23.1",
     "swiper": "^8.3.2"
   }
 }
