@@ -93,8 +93,8 @@ body {
   margin-right: 10px;
 }
 
-.sendBtn {
-  margin-top: 2px;
+.buttons svg:hover {
+  cursor: pointer;
 }
 
 .commentsContainer {
