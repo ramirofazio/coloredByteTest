@@ -58,18 +58,3 @@ postbtn[0].addEventListener('click', function addComment(event) {
     };
     document.getElementsByClassName("commentInput")[0].value = "";
 })
-
-/*
-    Hello Stranger! My name is Ramiro.
-
-    I hope you like this code, I have some things to reinforce, but I'm in constant learning and have a lot of consistency :D.
-
-    My objective is to enter on a company to learn of my seniors collagues and stay there to progress and to develop high quality 
-    software. I really hope that you consider my profile to this position, i want to work here. 
-
-    My final objective as a Dev is to become a real Senior, help others and to develop very high software structures and create
-    innovative technologies. Thanks 4 read.
-
-    -RFD
-
-*/
